@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 4 - Vista de Calendario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header style="justify-content: space-between;">
+    <h1>Calendario de Tareas</h1>
+    <nav class="nav-bar">
+      <button type="button" onclick="location.href='pagina3.html'">Volver a Tareas</button>
+    </nav>
+  </header>
+
+  <main class="grid-calendario">
+    <section class="calendario-box">
+      <h2>Calendario de Entregas</h2>
+      <div id="calendario-interactivo" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; background: #fff; padding: 10px; border-radius: 8px;">
+        <!-- Se genera visualmente vía JS -->
+      </div>
+    </section>
+
+    <aside class="detalle-calendario" style="display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <h3>Detalles de la Tarea</h3>
+        <div id="info-tarea-seleccionada">
+          <p id="detalles">Haz clic en un día del calendario para consultar las tareas asignadas y su fecha de término.</p>
+        </div>
+      </div>
+      <button type="button" id="btnCompletarTarea" class="btn" style="display: none;" onclick="alert('Tarea marcada como completada')">Completar Tarea</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Admin Tareas</p>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

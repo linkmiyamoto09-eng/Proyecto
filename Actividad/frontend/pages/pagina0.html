@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 0 - Descripción del Sitio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="../img/logo.png" alt="Logo de la plataforma" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\'><circle cx=\'25\' cy=\'25\' r=\'20\' fill=\'%23A7E0DB\'/></svg>'">
+    <nav class="nav-bar">
+      <button type="button" onclick="alert('Esta plataforma te ayuda a organizar, estructurar y gestionar tus proyectos diarios de manera simple.')">Por qué la página</button>
+      <button type="button" onclick="alert('Contacto con creadores:\nEmail: soporte@taskmanager.com\nTel: +52 55 1234 5678')">Contacto</button>
+      <button type="button" onclick="location.href='pagina1.html'">Iniciar Sesión</button>
+      <button type="button" onclick="document.getElementById('sec-comentarios').scrollIntoView({behavior: 'smooth'});">Comentarios</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="descripcion-sec">
+      <article class="form-container" style="width: 80%; max-width: 800px;">
+        <h2>Descripción del Sitio</h2>
+        <p>Bienvenido a la plataforma ideal para administrar tus tareas. Mantén el control de tus pendientes, prioridades y fechas límite en un solo lugar.</p>
+      </article>
+    </section>
+
+    <aside id="sec-comentarios">
+      <section class="form-container" style="width: 80%; max-width: 800px; margin-top: 2rem;">
+        <h3>Comentarios y Reseñas</h3>
+        <article style="border-bottom: 1px solid var(--color2); padding: 10px 0;">
+          <p><strong>Carlos M.:</strong> "Excelente plataforma para organizar mi tiempo en el trabajo."</p>
+        </article>
+        <article style="padding: 10px 0;">
+          <p><strong>Ana P.:</strong> "La vista de calendario me ayuda mucho a no olvidar entregas importantes."</p>
+        </article>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Admin Tareas - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
